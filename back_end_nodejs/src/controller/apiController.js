@@ -11,7 +11,7 @@ const getUsers = async (req, res) => {
 
   res.status(200).json({
     message: 'Api get all user have called',
-    data: rows 
+    result: rows 
   })
 }
 
