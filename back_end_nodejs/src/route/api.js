@@ -1,4 +1,4 @@
-//there will be contain all path and function for each api path 
+// there will be contain all path and funtion of each path for api 
 
 // require express
 const express = require('express')
@@ -6,14 +6,15 @@ const express = require('express')
 // require all function from apiController
 const { getUsers } = require('../controller/apiController')
 
-// const router 
+// const router from express.Router()
 const router = express.Router();
 
-// set api path and function for each
-router.get('/user', getUsers)
+// set path for function 
+router.get('/user', getUsers);
 
-//module export 
+// module export 
 module.exports = router;
+
 
 
 

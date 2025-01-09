@@ -1,12 +1,13 @@
-// there will be contain alll funtion of api controller should have 
+// there will be contain all function of api 
 
-// function with req and res 
+// function: get all user (have req and res as param ) 
 const getUsers = (req, res) => {
   res.status(200).json({
-    message: "Api get all user have been called!",
+    message: 'Api get all user have called',
     data: {
-      username: 'amdin',
-      role: 'ADMIN'
+      username: 'admin01',
+      role: 'ADMIN',
+      email: 'amdin01@gmail.com'
     }
   })
 }
@@ -15,7 +16,6 @@ const getUsers = (req, res) => {
 module.exports = {
   getUsers,
 }
-
 
 
 

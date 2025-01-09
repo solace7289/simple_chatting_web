@@ -1,27 +1,27 @@
-// this is main file of project 
+// this will be main file of project 
 
-//require express
+// require expres 
 const express = require('express')
 
-// require router
-const apiRouter = require('./route/api');
+// require router 
+const apiRouter = require('./route/api')
 
-// const app and port of project 
+// const app 
 const app = express();
+
+// const port 
 const port = 3000;
 
-// set midderware
+// add middlewere
 app.use(express.json());
 
-// use router and path start with: /api 
+// use api router 
 app.use('/api', apiRouter);
 
-// app listen
+// app listen 
 app.listen(port, () => {
   console.log(`App is running at: http://localhost:${port}`)
 })
-
-
 
 
 
