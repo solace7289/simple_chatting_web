@@ -15,6 +15,9 @@ const port = 3000;
 // add middlewere
 app.use(express.json());
 
+// allow encode url 
+// app.use(express.urlencoded({ extended: true }));
+
 // use api router 
 app.use('/api', apiRouter);
 
